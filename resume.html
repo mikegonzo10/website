@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Mike Corona-Gonzalez</title>
+  <meta name="description" content="Resume of Mike Corona-Gonzalez — cybersecurity student and aspiring security analyst." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">mike<span>@sec</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="linkedin.html">Articles</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <div class="container">
+
+      <section class="section">
+        <h1 class="section-title">Resume</h1>
+        <p class="section-subtitle">Download my resume or view it below.</p>
+
+        <!-- Action buttons -->
+        <div class="resume-actions">
+          <!--
+            UPDATE: Change the href to your actual resume PDF path.
+            Options:
+              1. Add your PDF to the repo as "assets/resume.pdf" and set href="assets/resume.pdf"
+              2. Use a Google Drive share link
+              3. Use a Dropbox/OneDrive link
+          -->
+          <a href="assets/resume.pdf" download="Mike-Corona-Gonzalez-Resume.pdf" class="btn btn-primary">
+            ⬇ Download Resume
+          </a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Open in New Tab
+          </a>
+        </div>
+
+        <!-- PDF embed area -->
+        <div class="resume-embed">
+          <!--
+            UPDATE: Replace "assets/resume.pdf" with your actual PDF path.
+            The <object> tag works better than <iframe> for PDFs across browsers.
+          -->
+          <object data="assets/resume.pdf" type="application/pdf" width="100%" height="100%">
+            <!-- Fallback if PDF can't be embedded -->
+            <div class="resume-placeholder">
+              <span class="placeholder-icon">📄</span>
+              <h3>Resume PDF not yet uploaded</h3>
+              <p>
+                To display your resume here, add your PDF file to the <code>assets/</code> folder
+                and name it <code>resume.pdf</code>.
+              </p>
+              <div class="resume-steps">
+                <div class="resume-step">
+                  <div class="resume-step-num">Step 01</div>
+                  <h4>Add your PDF</h4>
+                  <p>Upload <code>resume.pdf</code> to the <code>assets/</code> folder in this repo.</p>
+                </div>
+                <div class="resume-step">
+                  <div class="resume-step-num">Step 02</div>
+                  <h4>Update the links</h4>
+                  <p>The download button and embed will automatically use <code>assets/resume.pdf</code>.</p>
+                </div>
+                <div class="resume-step">
+                  <div class="resume-step-num">Step 03</div>
+                  <h4>Alternative: Google Drive</h4>
+                  <p>Set the <code>data</code> attribute on the <code>&lt;object&gt;</code> tag to a Google Drive embed link.</p>
+                </div>
+              </div>
+            </div>
+          </object>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="easter-egg-overlay"></div>
+  <div class="easter-egg-terminal">
+    <div class="terminal-header">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title">bash — secret terminal</span>
+      <button class="easter-egg-close" style="margin-left:auto;background:none;border:none;color:#666;cursor:pointer;font-size:1.1rem;padding:0 0.25rem;">✕</button>
+    </div>
+    <div class="easter-egg-body">
+      <div class="easter-egg-output"></div>
+      <div class="easter-egg-input-line">
+        <span class="easter-egg-prompt">mike@portfolio:~$</span>
+        <input type="text" class="easter-egg-input" placeholder="type 'help'…" autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">© 2026 Mike Corona-Gonzalez</span>
+      <nav class="footer-links">
+        <a href="https://github.com/mikegonzo10" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN-HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

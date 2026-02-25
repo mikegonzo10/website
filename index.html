@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Mike Corona-Gonzalez | Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity student and aspiring security analyst. Portfolio showcasing skills in network security, ethical hacking, and CTF challenges." />
+  <meta name="keywords" content="cybersecurity, security analyst, ethical hacking, network security, CTF, Nmap, Wireshark, Burp Suite, Metasploit, Mike Corona-Gonzalez" />
+  <meta name="author" content="Mike Corona-Gonzalez" />
+  <link rel="canonical" href="https://mikegonzo10.github.io/website/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mike Corona-Gonzalez | Cybersecurity Portfolio" />
+  <meta property="og:description" content="Cybersecurity student and aspiring security analyst building skills in ethical hacking, network security, and CTF challenges." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mikegonzo10.github.io/website/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mike Corona-Gonzalez | Cybersecurity Portfolio" />
+  <meta name="twitter:description" content="Cybersecurity student and aspiring security analyst." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts (preconnect for speed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== Navigation ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">mike<span>@sec</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="linkedin.html">Articles</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-inner">
+
+      <!-- Left: Text content -->
+      <div class="hero-content">
+        <div class="hero-badge">Available for internships &amp; entry-level roles</div>
+
+        <h1 class="hero-name glitch">Mike<br>Corona-Gonzalez</h1>
+
+        <div class="hero-title" aria-live="polite">
+          <span class="typing-text"></span><span class="cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-bio">
+          Passionate about cybersecurity, ethical hacking, and protecting digital systems.
+          I'm building hands-on experience through CTF challenges, home lab experiments,
+          and continuous learning — one vulnerability at a time.
+        </p>
+
+        <div class="hero-cta">
+          <a href="about.html" class="btn btn-primary">View My Skills</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          <button class="btn btn-outline easter-egg-trigger" title="Press Ctrl+` anytime to open terminal">
+            <span class="font-mono text-green">$ _</span>&nbsp;Terminal
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Animated terminal -->
+      <div class="terminal-window" aria-hidden="true">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">bash — mike@kali: ~/security</span>
+        </div>
+        <div class="terminal-body">
+          <!-- Lines injected by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== Easter Egg Terminal ===================== -->
+  <div class="easter-egg-overlay" role="presentation"></div>
+  <div class="easter-egg-terminal" role="dialog" aria-label="Secret terminal" aria-modal="true">
+    <div class="terminal-header">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title">bash — secret terminal</span>
+      <button class="easter-egg-close"
+              style="margin-left:auto;background:none;border:none;color:#666;cursor:pointer;font-size:1.1rem;padding:0 0.25rem;"
+              aria-label="Close terminal">✕</button>
+    </div>
+    <div class="easter-egg-body">
+      <div class="easter-egg-output" aria-live="polite"></div>
+      <div class="easter-egg-input-line">
+        <span class="easter-egg-prompt">mike@portfolio:~$</span>
+        <input type="text" class="easter-egg-input"
+               placeholder="type 'help'…"
+               autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">© 2026 Mike Corona-Gonzalez. Built with security in mind.</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="https://github.com/mikegonzo10" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN-HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Mike Corona-Gonzalez</title>
+  <meta name="description" content="Cybersecurity blog covering CTF writeups, tool tutorials, and security concepts." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">mike<span>@sec</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="linkedin.html">Articles</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <div class="container">
+
+      <section class="section">
+        <h1 class="section-title">Blog</h1>
+        <p class="section-subtitle">CTF writeups, tool guides, and security concepts — straight from the lab.</p>
+
+        <!-- Tag filter buttons — populated by JS -->
+        <div class="tag-filter" role="group" aria-label="Filter posts by tag"></div>
+
+        <!-- Blog post grid — populated by JS -->
+        <div class="blog-grid" aria-live="polite"></div>
+
+        <!-- Shown when no posts match filter -->
+        <div class="no-results hidden">
+          <p>No posts found for that tag.</p>
+        </div>
+      </section>
+
+      <!-- ====== How to add posts ====== -->
+      <section class="section">
+        <div class="card" style="border-left:3px solid var(--accent-green);">
+          <h3 class="font-mono text-green" style="margin-bottom:0.75rem;">// How to add a new blog post</h3>
+          <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.75rem;">
+            Open <code>js/posts.js</code> and add a new object to the <code>posts</code> array:
+          </p>
+          <pre style="background:#0d0d0d;border:1px solid var(--border);border-radius:var(--radius);padding:1rem;overflow-x:auto;font-size:0.82rem;color:var(--text-primary);margin:0;"><code>{
+  id: 4,                          // next unique number
+  title: "Your Post Title",
+  date: "2026-03-01",             // YYYY-MM-DD
+  tags: ["tag1", "tag2"],
+  thumbnail: "🔒",               // emoji or image URL
+  excerpt: "Short summary shown on the card.",
+  content: `&lt;h2&gt;Your content here&lt;/h2&gt;&lt;p&gt;HTML is supported.&lt;/p&gt;`
+}</code></pre>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="easter-egg-overlay"></div>
+  <div class="easter-egg-terminal">
+    <div class="terminal-header">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title">bash — secret terminal</span>
+      <button class="easter-egg-close" style="margin-left:auto;background:none;border:none;color:#666;cursor:pointer;font-size:1.1rem;padding:0 0.25rem;">✕</button>
+    </div>
+    <div class="easter-egg-body">
+      <div class="easter-egg-output"></div>
+      <div class="easter-egg-input-line">
+        <span class="easter-egg-prompt">mike@portfolio:~$</span>
+        <input type="text" class="easter-egg-input" placeholder="type 'help'…" autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">© 2026 Mike Corona-Gonzalez</span>
+      <nav class="footer-links">
+        <a href="https://github.com/mikegonzo10" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN-HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
